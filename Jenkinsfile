@@ -28,7 +28,7 @@ node('built-in')
     {
         try
         {
-            sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/trial3/webapp/target/webapp.war ubuntu@172.31.5.154:/var/lib/tomcat9/webapps/test.war'
+            sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/trial3/webapp/target/webapp.war ubuntu@172.31.5.154:/var/lib/tomcat9/webapps/testapp.war'
         }   
         catch (Exception e3)
         {
@@ -53,7 +53,7 @@ node('built-in')
     {
         try
         {
-          sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/trial3/webapp/target/webapp.war ubuntu@172.31.10.75:/var/lib/tomcat9/webapps/prod.war'
+          sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/trial3/webapp/target/webapp.war ubuntu@172.31.10.75:/var/lib/tomcat9/webapps/prodapp.war'
         }   
         catch (Exception e5)
         {

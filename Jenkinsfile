@@ -41,7 +41,7 @@ node('built-in')
         try
         {
           git 'https://github.com/OmkarAnk/Functional_testing.git'
-          sh 'java -jar /home/ubuntu/.jenkins/workspace/demo/testing.jar'
+          sh 'java -jar /home/ubuntu/.jenkins/workspace/trial3/testing.jar'
         }   
         catch (Exception e4)
         {

@@ -28,7 +28,7 @@ node('built-in')
     {
         try
         {
-            deploy adapters: [tomcat9(credentialsId: 'bed67ebe-4439-4af0-8718-5f01b09abdda', path: '', url: 'http://172.31.5.154:8080')], contextPath: 'test', war: '**/*.war'
+            sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.5.154:/var/lib/tomcat8/webapps/testwebapp.war'
         }   
         catch (Exception e3)
         {
@@ -53,7 +53,7 @@ node('built-in')
     {
         try
         {
-          deploy adapters: [tomcat9(credentialsId: 'bed67ebe-4439-4af0-8718-5f01b09abdda', path: '', url: 'http://172.31.10.75:8080')], contextPath: 'prod', war: '**/*.war'
+          sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.10.75:/var/lib/tomcat8/webapps/prodwebapp.war'
         }   
         catch (Exception e5)
         {

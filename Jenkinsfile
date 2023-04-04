@@ -28,7 +28,7 @@ node('built-in')
     {
         try
         {
-            sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/trial3/webapp/target/webapp.war ubuntu@172.31.5.154:/var/lib/tomcat9/webapps/testapp.war'
+            sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/multibranchjpipeline_master/webapp/target/webapp.war ubuntu@172.31.5.154:/var/lib/tomcat9/webapps/testapp.war'
         }   
         catch (Exception e3)
         {
@@ -41,7 +41,7 @@ node('built-in')
         try
         {
           git 'https://github.com/OmkarAnk/Functional_testing.git'
-          sh 'java -jar /home/ubuntu/.jenkins/workspace/trial3/testing.jar'
+          sh 'java -jar /home/ubuntu/.jenkins/workspace/multibranchjpipeline_master/testing.jar'
         }   
         catch (Exception e4)
         {

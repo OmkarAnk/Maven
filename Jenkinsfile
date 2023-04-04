@@ -5,7 +5,6 @@ node('built-in')
         try
         {
 	    git 'https://github.com/OmkarAnk/maven.git'
-        }   
         catch (Exception e1)
         {
             mail bcc: '', body: 'Jenkins unable to download the code', cc: '', from: '', replyTo: '', subject: 'Continuous download failed', to: 'gitadmin@gmail.com'

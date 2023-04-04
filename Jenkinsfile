@@ -4,7 +4,7 @@ node('built-in')
     {
         try
         {
-	    https://github.com/OmkarAnk/maven.git
+	    git 'https://github.com/OmkarAnk/maven.git'
         }   
         catch (Exception e1)
         {

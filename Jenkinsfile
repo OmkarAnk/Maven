@@ -8,7 +8,7 @@ node('built-in')
         }   
         catch (Exception e1)
         {
-            mail bcc: '', body: 'Jenkiins unable to download the code', cc: '', from: '', replyTo: '', subject: 'Continuous download failed', to: 'gitadmin@gmail.com'
+            mail bcc: '', body: 'Jenkiins unable to dwnload the code', cc: '', from: '', replyTo: '', subject: 'Continuous download failed', to: 'gitadmin@gmail.com'
             exit(1)
         }
     }

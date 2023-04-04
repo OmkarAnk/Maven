@@ -33,7 +33,7 @@ node('built-in')
         }   
         catch (Exception e3)
         {
-            mail bcc: '', body: 'Jenkins is deploy to the artifact', cc: '', from: '', replyTo: '', subject: 'Continuous deployment failed', to: 'gitadmin@gmail.com'
+            mail bcc: '', body: 'Jenkins s deploy to the artifact', cc: '', from: '', replyTo: '', subject: 'Continuous deployment failed', to: 'gitadmin@gmail.com'
             exit(1)
         }
     }
